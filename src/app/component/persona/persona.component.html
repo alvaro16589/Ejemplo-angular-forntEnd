@@ -1,16 +1,101 @@
 
-<div>
-    <button class="btn btn-primary">Saludos</button>
-    <div class="card mt-2" style="width: 18em;">
-        <div class="card-header">
-            <p class="card-title">
-                Esta es la cabecera del card
-            </p>
-        </div>
-        <div class="card-body " >
-            <p class="card-text">
-                este es el cuerpo
-            </p>
-        </div>
+<div class="container">
+    <div class="mt-5">
+        <h2>Persona</h2>
     </div>
+    <div>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#nuevo">Registrar</button>
+    </div>
+    <table class="table table-dark table-hover">
+        <thead>
+            <tr>
+              <th scope="col ">N</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Ape. Paterno</th>
+              <th scope="col">Ape. Materno</th>
+              <th scope="col">CI</th>
+              <th scope="col">Sexo</th>
+              <th scope="col">...</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Juan </td>
+              <td>Perez</td>
+              <td>Pereira</td>
+              <td>5454545</td>
+              <td>Masculino</td>
+              <td>
+                  <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#edit">editar</button>
+                  <button class="btn btn-outline-danger" >eliminar</button>
+              </td>
+            </tr>
+    </table>
+    <!-- Modal -->
+<div class="modal fade" id="edit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Editar persona</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su nombre">
+              <label for="exampleInputEmail1" class="form-label">Apellido Paterno</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su apellido paterno">
+              <label for="exampleInputEmail1" class="form-label">Apellido Materno</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su apellido materno">
+              <label for="exampleInputEmail1" class="form-label">CI</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su CI">
+              <label for="exampleInputEmail1" class="form-label">Sexo</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su Sexo">
+            </div>
+                       
+            <button type="button" class="btn btn-outline-success">Guardar</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- Modal -->
+<div class="modal fade" id="nuevo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Registrar nueva persona</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su nombre">
+            <label for="exampleInputEmail1" class="form-label">Apellido Paterno</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su apellido paterno">
+            <label for="exampleInputEmail1" class="form-label">Apellido Materno</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su apellido materno">
+            <label for="exampleInputEmail1" class="form-label">CI</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su CI">
+            <label for="exampleInputEmail1" class="form-label">Sexo</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su Sexo">
+          </div>
+                     
+          <button type="button" class="btn btn-outline-success">Guardar</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
 </div>
