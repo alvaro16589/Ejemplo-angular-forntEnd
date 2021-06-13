@@ -11,6 +11,7 @@ import { SeederComponent } from './component/layout/seeder/seeder.component';
 import { HeaderComponent } from './component/layout/header/header.component';
 import { RolesComponent } from './pages/roles/roles.component';
 import { PermisosComponent } from './pages/permisos/permisos.component';
+import { DesignComponent } from './component/layout/design/design.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { PermisosComponent } from './pages/permisos/permisos.component';
     SeederComponent,
     HeaderComponent,
     RolesComponent,
-    PermisosComponent
+    PermisosComponent,
+    DesignComponent
   ],
   imports: [
     BrowserModule,
